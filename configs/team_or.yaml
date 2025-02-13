@@ -1,0 +1,56 @@
+init_rand_seed: 1234567891
+dataset_name: team_or
+train_split: ['training']
+val_split: ['test']
+model_name: "MaxAvg_net"
+dataset: {
+  json_file: /path/to/the/annotations,
+  feat_folder: /path/to/the/features,
+  file_prefix: ~,
+  file_ext: .npy,
+  num_classes: 1,
+  input_dim: 1664,
+  feat_stride: 32,
+  num_frames: 32,
+  default_fps: 30,
+  trunc_thresh: 0.3,
+  crop_ratio: [0.9, 1.0],
+  max_seq_len: 23040,
+  seg_name: '11 (Time-Out)', # '(10) STOP' or '11 (Time-Out)'
+  train_set_ratio: 0.6,
+}
+model: {
+  regression_range: [ [ 0, 4 ], [ 2, 8 ], [ 4, 16 ], [ 8, 32 ], [ 16, 64 ], [ 32, 10000 ] ],
+  fpn_type: identity,
+  max_buffer_len_factor: 4.0,
+  n_sgp_win_size: 1,
+  num_bins: 16,
+  iou_weight_power: 0.25,
+  sgp_mlp_dim: 1024,
+  k: 4,
+  init_conv_vars: 0.0,
+}
+opt: {
+  learning_rate: 0.0001,
+  warmup_epochs: 30,
+  epochs: 30,
+  weight_decay: 0.025,
+}
+loader: {
+  batch_size: 2,
+}
+train_cfg: {
+  init_loss_norm: 250,
+  clip_grad_l2norm: 1.0,
+  cls_prior_prob: 0.01,
+  center_sample: radius,
+  center_sample_radius: 1.5,
+}
+test_cfg: {
+  pre_nms_topk: 5000,
+  max_seg_num: 2000,
+  min_score: 0.001,
+  nms_sigma : 0.4,
+  multiclass_nms: True
+}
+output_folder: ./ckpt/
