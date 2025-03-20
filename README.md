@@ -13,10 +13,13 @@ Keqi Chen, Lilien Schewski, Vinkle Srivastav, Joël Lavanchy, Didier Mutter, Gui
 
 ## Introduction
 
-- Purpose: Surgical performance depends not only on surgeons' technical skills but also on team communication within and across the different professional groups present during the operation. Therefore, automatically identifying team communication in the OR is crucial for patient safety and advances in the development of computer-assisted surgical workflow analysis and intra-operative support systems. To take the first step, we propose a new task of detecting communication briefings involving all OR team members, i.e. the team Time-out and the StOP?-protocol, by localizing their start and end times in video recordings of surgical operations.
-- Methods: We generate an OR dataset of real surgeries, called Team-OR, with more than one hundred hours of surgical videos captured by the multi-view camera system in the OR. The dataset contains temporal annotations of 33 Time-out and 22 StOP?-protocol activities in total. We then propose a novel group activity detection approach, where we encode both scene context and action features, and use an efficient neural network model to output the results.
-- Results: The experimental results on the Team-OR dataset show that our approach outperforms existing state-of-the-art temporal action detection approaches. It also demonstrates the lack of research on group activities in the OR, proving the significance of our dataset. 
-- Conclusion: We investigate the Team Time-Out and the StOP?-protocol in the OR, by presenting the first OR dataset with temporal annotations of group activities protocols, and introducing a novel group activity detection approach that outperforms existing approaches.
+**Purpose**: Surgical performance depends not only on surgeons' technical skills but also on team communication within and across the different professional groups present during the operation. Therefore, automatically identifying team communication in the OR is crucial for patient safety and advances in the development of computer-assisted surgical workflow analysis and intra-operative support systems. To take the first step, we propose a new task of detecting communication briefings involving all OR team members, i.e. the team Time-out and the StOP?-protocol, by localizing their start and end times in video recordings of surgical operations.
+
+**Methods**: We generate an OR dataset of real surgeries, called Team-OR, with more than one hundred hours of surgical videos captured by the multi-view camera system in the OR. The dataset contains temporal annotations of 33 Time-out and 22 StOP?-protocol activities in total. We then propose a novel group activity detection approach, where we encode both scene context and action features, and use an efficient neural network model to output the results.
+
+**Results**: The experimental results on the Team-OR dataset show that our approach outperforms existing state-of-the-art temporal action detection approaches. It also demonstrates the lack of research on group activities in the OR, proving the significance of our dataset. 
+
+**Conclusion**: We investigate the Team Time-Out and the StOP?-protocol in the OR, by presenting the first OR dataset with temporal annotations of group activities protocols, and introducing a novel group activity detection approach that outperforms existing approaches.
 
 ### Overall framework
 <p float="center"> <img src="data/teamor.gif" width="100%" /> </p>
