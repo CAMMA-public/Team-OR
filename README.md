@@ -19,7 +19,7 @@ Keqi Chen, Lilien Schewski, Vinkle Srivastav, Joël Lavanchy, Didier Mutter, Gui
 - Conclusion: We investigate the Team Time-Out and the StOP?-protocol in the OR, by presenting the first OR dataset with temporal annotations of group activities protocols, and introducing a novel group activity detection approach that outperforms existing approaches.
 
 ### Overall framework
-<img src="data/figure_method.png" width="1200"/>
+<p float="center"> <img src="data/teamor.gif" width="100%" /> </p>
 
 #### In this repo we provide:
 - Training and testing code for the group activity detection approach in the OR. 
