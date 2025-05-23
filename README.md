@@ -5,7 +5,7 @@
 </div>
 
 ## **When do they StOP?: A First Step Towards Automatically Identifying Team Communication in the Operating Room**
-Keqi Chen, Lilien Schewski, Vinkle Srivastav, Joël Lavanchy, Didier Mutter, Guido Beldi, Sandra Keller*, Nicolas Padoy*, IPCAI 2025
+Keqi Chen, Lilien Schewski, [Vinkle Srivastav](https://vinkle.github.io/), Joël Lavanchy, Didier Mutter, Guido Beldi, Sandra Keller*, Nicolas Padoy*, IPCAI 2025
 
 *Co-last authors
 
